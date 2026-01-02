@@ -4,8 +4,26 @@ import useGlobalReducer from "../hooks/useGlobalReducer.jsx";
 
 export const Home = () => {
 
+
 	const { store, dispatch } = useGlobalReducer()
 
+	const characters = [
+		{ name: "Luke Skywalker", gender: "Male", hair_color: "blond", eye_color: "blue" },
+		{ name: "Leia Organa", gender: "Female", hair_color: "brown", eye_color: "brown" },
+		{ name: "Obi-Wan Kenobi", gender: "Male", hair_color: "blond", eye_color: "brown" },
+		{ name: "Han Solo", gender: "Male", hair_color: "black", eye_color: "brown" },
+		{ name: "Anakin Skywalker", gender: "Male", hair_color: "brown", eye_color: "brown" },
+		{ name: "Swilla Corey", gender: "Female", hair_color: "blond", eye_color: "brown" },
+		{ name: "Gold Two", gender: "Male", hair_color: "brown", eye_color: "brown" }
+	];
+
+	const planets = [
+		{ name: "Festuciar", population: "100.000", element: "Fire" },
+		{ name: "Meet 8", population: "345.975", element: "Water" },
+		{ name: "Popon", population: "100.00", element: "Air" },
+		{ name: "Mahari", population: "200.700", element: "Ground" },
+		{ name: "Pepique", population: "350.000", element: "God" }
+	];
 	return (
 		<div className="text-center mt-5 ">
 			<h1>Characters</h1>
@@ -172,9 +190,7 @@ export const Home = () => {
 						</svg>
 					</div>
 				</div>
-
 			</div>
 		</div>
-
 	);
 }; 
