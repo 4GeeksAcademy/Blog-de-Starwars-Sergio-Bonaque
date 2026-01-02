@@ -2,7 +2,6 @@ export const Footer = () => {
     return (
         < div className="card text-center" >
             <div className="card-header">
-
             </div>
             <div className="card-body">
                 <h5 className="card-title">Special title treatment</h5>
