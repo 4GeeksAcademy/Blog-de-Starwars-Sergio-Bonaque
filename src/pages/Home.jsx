@@ -118,10 +118,11 @@ export const Home = () => {
               onError={(e) => e.target.src = "https://via.placeholder.com/172x150?text=No+img"}
               style={{ height: '150px', objectFit: 'cover' }}
             />
+			
             <div className="card-body">
               <h5 className="card-title">{planet.name}</h5>
-              <small className="d-block">Population: {planet.population}</small>
-              <small className="d-block">Climate: {planet.climate}</small>
+              <small className="d-block">Population: 270.000{planet.population}</small>
+              <small className="d-block">Element: Water {planet.element}</small>
               <Link to={`/planet/${planet.id}`} className="btn btn-primary btn-sm mt-2">
                 Learn More!
               </Link>
@@ -155,8 +156,8 @@ export const Home = () => {
             />
             <div className="card-body">
               <h5 className="card-title">{vehicle.name || vehicle.model}</h5>
-              <small className="d-block">Type: {vehicle.vehicle_class}</small>
-              <small className="d-block">Manufacturer: {vehicle.manufacturer}</small>
+              <small className="d-block">Type: Volador{vehicle.vehicle_class}</small>
+              <small className="d-block">Manufacturer: Acero {vehicle.material}</small>
               <Link to={`/vehicle/${vehicle.id}`} className="btn btn-primary btn-sm mt-2">
                 Learn More!
               </Link>
