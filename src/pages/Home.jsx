@@ -11,7 +11,6 @@ export const Home = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Cargar personajes
     fetch("https://swapi.tech/api/people")
       .then(res => res.json())
       .then(data => {
@@ -22,7 +21,6 @@ export const Home = () => {
         setCharacters(list.slice(0, 6));
       });
 
-    // Cargar planetas
     fetch("https://swapi.tech/api/planets")
       .then(res => res.json())
       .then(data => {
@@ -33,7 +31,6 @@ export const Home = () => {
         setPlanets(list.slice(0, 5));
       });
 
-    // Cargar vehículos
     fetch("https://swapi.tech/api/vehicles")
       .then(res => res.json())
       .then(data => {
