@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
 import useGlobalReducer from "../hooks/useGlobalReducer";
 
-export const CharacterDetail = () => {
+export const Character = () => {
     const { id } = useParams();
     const { store, dispatch } = useGlobalReducer();
     const [character, setCharacter] = useState(null);

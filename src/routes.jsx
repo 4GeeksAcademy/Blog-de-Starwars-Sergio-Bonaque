@@ -5,9 +5,8 @@ import {
 } from "react-router-dom";
 import { Layout } from "./pages/Layout";
 import { Home } from "./pages/Home";
-import { CharacterDetail } from "./pages/character"; 
-import { PlanetDetail } from "./pages/planet";        
-import { VehicleDetail } from "./pages/VehicleDetail";
+import { CharacterDetail } from "./pages/Character";
+import { PlanetDetail } from "./pages/Planet";
 import { Favorites } from "./pages/Favorites";
 
 export const router = createBrowserRouter(
@@ -16,7 +15,6 @@ export const router = createBrowserRouter(
         <Route path="/" element={<Home />} />
         <Route path="/character/:id" element={<CharacterDetail />} />
         <Route path="/planet/:id" element={<PlanetDetail />} />
-        <Route path="/vehicle/:id" element={<VehicleDetail />} />
         <Route path="/favorites" element={<Favorites />} />
       </Route>
     )
