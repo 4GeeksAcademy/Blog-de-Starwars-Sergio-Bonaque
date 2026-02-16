@@ -76,7 +76,7 @@ export const Home = () => {
               className="card-img-top"
               src={getImage("characters", char.id)}
               alt={char.name}
-              onError={(e) => e.target.src = "https://via.placeholder.com/286x400?text=No+img"}
+              onError={(e) => e.target.src = "https://via.placeholder.com/286x400?text=No+img"} // da error constantemente ene la imagen
               style={{ height: '200px', objectFit: 'cover' }}
             />
             <div className="card-body">
