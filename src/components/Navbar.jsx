@@ -1,4 +1,4 @@
-import { useGlobalReducer } from "../hooks/useGlobalReducer";
+import useGlobalReducer from "../hooks/useGlobalReducer";
 import { useState } from "react";
 
 export const Navbar = () => {
@@ -22,7 +22,7 @@ export const Navbar = () => {
                 </button>
                 
                 {showDropdown && (
-                    <ul className="dropdown-menu dropdown-menu-end show" style={{minWidth: '300px'}}>
+                    <ul className="dropdown-menu dropdown-menu-end show" style={{minWidth: '300px', maxHeight: '400px', overflowY: 'auto'}}>
                         {store.favorites.length === 0 ? (
                             <li><span className="dropdown-item text-muted">No favorites yet</span></li>
                         ) : (
