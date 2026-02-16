@@ -9,7 +9,7 @@ export const CharacterDetail = () => {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        fetch(`https://swapi.tech/api/people/${id}`)
+        fetch(`https://swapi.tech/api/people/${id}`)  // ← Sin espacios
             .then(res => res.json())
             .then(data => {
                 setCharacter({
@@ -39,10 +39,10 @@ export const CharacterDetail = () => {
             <div className="row">
                 <div className="col-md-6">
                     <img 
-                        src={`https://starwars-visualguide.com/assets/img/characters/${id}.jpg`} 
+                        src={`https://starwars-visualguide.com/assets/img/characters/${id}.jpg`}  // ← Sin espacios
                         className="img-fluid rounded" 
                         alt={character.name}
-                        onError={(e) => e.target.src = "https://via.placeholder.com/400x600?text=No+img"}
+                        onError={(e) => e.target.src = "https://via.placeholder.com/400x600?text=No+img"}  // ← Sin espacios
                     />
                 </div>
                 <div className="col-md-6">
