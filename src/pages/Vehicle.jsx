@@ -9,7 +9,8 @@ export const Vehicle = () => {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        fetch(`https://swapi.tech{id}`)
+        // CORRECCIÓN: Ruta completa de la API
+        fetch(`https://www.swapi.tech{id}`)
             .then(res => res.json())
             .then(data => {
                 setVehicle({
@@ -39,9 +40,11 @@ export const Vehicle = () => {
             <div className="row mb-5 pb-4">
                 <div className="col-md-6 text-center">
                     <img 
+                        // CORRECCIÓN: Ruta completa de la imagen
                         src={`https://starwars-visualguide.com{id}.jpg`}
                         className="img-fluid rounded shadow" 
                         alt={vehicle.name}
+                        // CORRECCIÓN: Placeholder oficial
                         onError={(e) => e.target.src = "https://starwars-visualguide.com"}
                     />
                 </div>
